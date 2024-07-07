@@ -1,0 +1,41 @@
+
+// ADD AKUN STAFF
+POST http://localhost:5000/staff
+Content-Type: application/json
+
+{
+    "name": "iwang",
+    "email": "iwang@gmail.com",
+    "phone_number": "0888888",
+    "status": "available",
+    "password": "ahmadexx",
+    "employed": "2022-08-19",
+    "role": "admin"
+}
+###
+GET http://localhost:5000/staff
+###
+
+GET http://localhost:5000/staff-barber
+
+
+###
+GET http://localhost:5000/staff/4e7d4c73-fabf-4029-8f44-bbbbc7a2b692
+
+###
+PATCH http://localhost:5000/staff/2781d76e-5524-46d1-9c35-6fc83b871a8c
+Content-Type: application/json
+
+{
+    "name": "nama",
+    "email": "cashier@gmail.com",
+    "phone_number": "0888889",
+    "password": "ahmadexx",
+    "role": "cashier"
+}
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+

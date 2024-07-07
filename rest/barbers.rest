@@ -1,0 +1,13 @@
+
+// ADD Barbershop
+POST http://localhost:5000/barbers
+Content-Type: application/json
+
+{
+    "barberShopId" : 1,
+    "staffId" : 61,
+    "status" : "oke"
+}
+
+###
+GET http://localhost:5000/barbers

@@ -1,0 +1,13 @@
+
+// ADD Barbershop
+POST http://localhost:5000/barbershop
+Content-Type: application/json
+
+{
+    "name": "Dmens Cabang Perumnas",
+    "link_maps": "https://www.google.com/maps/place/D'mens+Barbershop/@-6.2191198,106.6001846,17z/data=!4m6!3m5!1s0x2e69fe977ecbbb4f:0x7b553ea19b02f3e2!8m2!3d-6.2188852!4d106.601751!16s%2Fg%2F11bbrjq2bd?entry=ttu",
+    "address": "Jl. Raya Harapan Kita No.8, Bencongan, Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810"
+}
+
+###
+GET http://localhost:5000/barbershop?name=perum

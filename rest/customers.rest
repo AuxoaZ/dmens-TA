@@ -1,0 +1,36 @@
+//REGISTER CUSTOMER CUY
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "alis",
+    "email": "aliss@gmail.com",
+    "phone_number": "0896566407977",
+    "password": "akucantik25"
+}
+
+###
+GET http://localhost:5000/profile/c3e7b8e3-0494-4e90-a13b-414ae630e71b
+###
+
+/// CREATE PROFILE
+POST http://localhost:5000/profile
+Content-Type: application/json
+
+{
+    "birth": "2023-06-15T13:45:30Z",
+    "gender": "lelaki",
+    "address": "jogjha"
+}
+###
+
+/// CREATE PROFILE
+PATCH http://localhost:5000/profile/c3e7b8e3-0494-4e90-a13b-414ae630e71b
+Content-Type: application/json
+
+{
+    "birth": "2023-06-15T13:45:30Z",
+    "gender": "lelaki",
+    "address": "SLEMAN BOZZ"
+}

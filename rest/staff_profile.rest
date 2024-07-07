@@ -1,0 +1,24 @@
+
+POST http://localhost:5000/staff_profile
+Content-Type: application/json
+
+{
+    "birth": "2023-06-15T13:45:30Z",
+    "gender": "lelaki",
+    "address": "jogjha"
+}
+###
+GET http://localhost:5000/staff_profile/
+
+###
+GET http://localhost:5000/staff_profile/4e7d4c73-fabf-4029-8f44-bbbbc7a2b692
+
+###
+PATCH http://localhost:5000/staff_profile/4e7d4c73-fabf-4029-8f44-bbbbc7a2b692
+Content-Type: application/json
+
+{
+    "birth": "2023-06-15T13:45:30Z",
+    "gender": "lelaki",
+    "address": "sedogan, lumbungrejo, tempel, sleman, jogja, indonesia"
+}
